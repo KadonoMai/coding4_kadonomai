@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ーーーーーーーーカフェLP_headerーーーーーーーー */
+
+.header_container_wrap {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left: 2.86%;
+    padding-right: 5.46%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.header_container h1 img {
+    width: 226px;
+}
+
+.header_nav ul {
+    display: flex;
+}
+
+.header_nav li {
+    width: 104px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.slider1 img {
+    width: 100%;
+}
+
+/* ーーーーーーーーカフェLP_mainーーーーーーーー */
+
+.main_container_wrap {
+    background-color: #e8d9bf;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title_p1 {
+    font-size: 30px;
+    padding: 103px 0px 0px 0px;
+}
+
+.title_h {
+    font-size: 82px;
+    padding: 50px 0px 0px 0px;
+}
+
+.title_p2 {
+    font-size: 23px;
+    padding: 50px 0px 100px;
+}
+
+/* ーーーーーーーーカフェLP_mainーーーーーーーー */
+/* ABOUT US */
+
+.main_pic {
+    display: inline-block;
+}
+
+.main_pic_left {
+    float: left;
+    width: 500px;
+    height: 560px;
+    border-radius: 0px 0px 30px 0px;
+}
+
+.main_pic_right img {
+    float: right;
+}
+
+.main_pic_right h3 {
+    font-size: 44px;
+    width: 349 px;
+}
+
+.main_pic_right main_pic_text {
+    font-size: 16px;
+    width: 410 px;
+}

@@ -92,15 +92,17 @@ img {
 
 /* ーーーーーーーーカフェLP_mainーーーーーーーー */
 
-.main_container_wrap {
+.main {
     background-color: #e8d9bf;
     display: flex;
-    flex-wrap: wrap;
 }
 
-.main_title {
-    text-align: center;
+.container {
+    max-width: 1000px;
     margin: 0 auto;
+}
+.company_hope {
+    text-align: center;
 }
 
 .title_p1 {
@@ -115,33 +117,164 @@ img {
 
 .title_p2 {
     font-size: 23px;
-    padding: 50px 0px 100px;
+    padding: 50px 0px 0px 0px;
+    margin-bottom: 88.5px;
+    line-height: 1.65;
 }
 
 /* ーーーーーーーーカフェLP_mainーーーーーーーー */
 /* ABOUT US */
 
-.main_pic {
-    display: inline-block;
+.about_us {
+    display: flex;
+    width: 100%;
 }
 
-.main_pic_left {
-    float: left;
-    width: 500px;
-    height: 560px;
-    border-radius: 0px 0px 30px 0px;
+.pic_left img {
+    width: 50%;
+    border-radius: 0px 0px 80px 0px;
 }
 
-.main_pic_right img {
-    float: right;
+.pic_right {
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 7.5%;
 }
 
-.main_pic_right h3 {
+.pic_right h2 img {
+    width: 272px;
+    margin-bottom: 48.5px;
+}
+
+.pic_right h3 {
     font-size: 44px;
-    width: 349 px;
+    width: 349px;
+    line-height: 1.39;
+    margin-bottom: 35px;
 }
 
-.main_pic_right main_pic_text {
+.pic_right p {
     font-size: 16px;
-    width: 410 px;
+    width: 410px;
+    line-height: 1.63;
+    margin-bottom: 35px;
+}
+
+/* MENU */
+
+.menu {
+    text-align: center;
+}
+
+.menu h2 img {
+    width: 151px;
+    margin: 70px 0px 35px;
+}
+
+/* メニュー写真 */
+
+.menu_picture {
+    display: flex;
+}
+
+.menu_picture h3 {
+    text-align: start;
+    padding-left: 10px;
+    margin: -10px 0px 20px;
+}
+
+.menu_picture p {
+    line-height: 1.47;
+    text-align: left;
+}
+
+/* メニュー写真左 */
+
+.pic_1 img {
+    border-radius: 0px 30px 0px 0px;
+    margin-right: 40px;
+}
+
+.pic_1 h3 {
+    font-size: 38px;
+    color: #d30202;
+}
+
+.pic_1 p {
+    font-size: 17px;
+    color: #4f260b;
+    line-height: 1.47;
+    width: 300px;
+}
+
+/* メニュー写真中 */
+
+.pic_2 img {
+    border-radius: 0px 30px 0px 0px;
+    margin-right: 40px;
+}
+
+.pic_2 h3 {
+    font-size: 38px;
+    color: #d30202;
+}
+
+.pic_2 p {
+    font-size: 17px;
+    color: #4f260b;
+    line-height: 1.47;
+    width: 300px;
+}
+
+/* メニュー写真右*/
+
+.pic_3 img {
+    border-radius: 0px 30px 0px 0px;
+}
+
+.pic_3 h3 {
+    font-size: 38px;
+    color: #d30202;
+}
+
+.pic_3 p {
+    font-size: 17px;
+    color: #4f260b;
+    line-height: 1.47;
+    width: 300px;
+}
+
+/* gallery */
+
+.gallery {
+    text-align: center;
+}
+
+.gallery h2 img {
+    width: 245px;
+    margin: 35 0px 20px;
+}
+
+/* event */
+
+.event {
+    width: 100%;
+}
+
+.event h2 img {
+    text-align: center;
+    width: 173px;
+    margin: 60px 0px 30px;
+}
+
+.event_information {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 1000px;
+    height: 200px;
+    background-color: #fff;
+    border: 3.68px solid #4f260b;
+    font-size: 23px;
 }

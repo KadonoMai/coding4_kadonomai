@@ -237,10 +237,10 @@ img {
 
 .event {
     width: 100%;
+    text-align: center;
 }
 
 .event h2 img {
-    text-align: center;
     width: 173px;
     margin: 60px 0px 30px;
 }
@@ -249,6 +249,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    text-align: left;
     background-color: #fff;
     border: 3.68px solid #4f260b;
     font-size: 23px;
@@ -294,6 +295,7 @@ img {
 .footer_list {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     margin-top: 80px;
     width: 100%;
 }

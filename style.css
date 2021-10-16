@@ -131,7 +131,7 @@ img {
 
 .about_us {
     display: flex;
-    width: 100%;
+    align-items: center;
 }
 
 .pic_left {
@@ -185,21 +185,12 @@ img {
     justify-content: space-between;
 }
 
-.pic_1 {
-    width: 30%;
-}
-
-.pic_2 {
-    width: 30%;
-}
-
-.pic_3 {
+.menu_picture div {
     width: 30%;
 }
 
 .menu_picture img {
     border-radius: 0px 30px 0px 0px;
-    margin-right: 40px;
 }
 
 .menu_picture h3 {
@@ -211,15 +202,10 @@ img {
 }
 
 .menu_picture p {
-    line-height: 1.47;
     text-align: left;
     font-size: 17px;
     color: #4f260b;
     line-height: 1.47;
-}
-
-.pic_3 img {
-    margin-right: 0px;
 }
 
 /* gallery */
@@ -236,7 +222,6 @@ img {
 /* event */
 
 .event {
-    width: 100%;
     text-align: center;
 }
 
@@ -254,6 +239,7 @@ img {
     border: 3.68px solid #4f260b;
     font-size: 23px;
     padding: 2% 0% 2% 15%;
+    margin-bottom: 60px;
 }
 
 .event_information li {
@@ -269,19 +255,23 @@ img {
 
 /* access */
 
-.access {
-    width: 100%;
+.access_title {
+    width: 213px;
+    margin: 0px auto 40px;
 }
 
-.access h2 img {
-    text-align: center;
-    width: 213px;
-    margin: 80px 0px 40px;
+.access_title img {
+    max-width: 100%;
 }
 
 .map {
     max-width: 1920px;
     margin-bottom: 0%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
 }
 
 /* フッター */
@@ -303,16 +293,18 @@ img {
     width: 226px;
 }
 
+.footer ul {
+    margin-left: 16%;
+}
 .footer li {
     font-size: 20px;
     line-height: 1.95;
     text-align: left;
-    margin-left: 16%;
 }
 
 .footer p {
     font-size: 16px;
     text-align: center;
     line-height: 2.19;
-    margin-top: 80px;
+    margin: 80px 0px 20px;
 }

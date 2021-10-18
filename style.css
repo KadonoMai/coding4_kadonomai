@@ -86,12 +86,6 @@ img {
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-/* スライダー */
-
-.slider1 img {
-    width: 100%;
-}
-
 /* ーーーーーーーーカフェLP_mainーーーーーーーー */
 
 .main {
@@ -231,9 +225,6 @@ img {
 }
 
 .event_information {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
     text-align: left;
     background-color: #fff;
     border: 3.68px solid #4f260b;
@@ -287,8 +278,8 @@ img {
     flex-wrap: wrap;
     text-align: center;
     margin-top: 80px;
-    width: 100%;
 }
+
 .footer_list h2 img {
     width: 226px;
 }
@@ -307,4 +298,100 @@ img {
     text-align: center;
     line-height: 2.19;
     margin: 80px 0px 20px;
+}
+
+/* スマホ */
+/* スライダー */
+
+.slider1 img {
+    width: 100%;
+}
+
+.sp_nav {
+    display: none;
+}
+.sp_menu_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .header_nav {
+        display: none;
+    }
+
+    .sp_menu_btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        height: 30px;
+    }
+
+    .sp_menu_btn span {
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 17px;
+        transition: 0.3s;
+    }
+
+    .sp_menu_btn span::before,
+    .sp_menu_btn span::after {
+        content: "";
+        width: 33px;
+        height: 3px;
+        display: block;
+        background: #fff;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_menu_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_menu_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        bottom: 0px;
+    }
+
+    .open span::after {
+        transform: rotate(135deg);
+        top: 0px;
+    }
+
+    .sp_nav {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        background: rgba(000, 000, 000, 0.8);
+        width: 100%;
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .sp_nav li {
+        color: #fff;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        text-align: center;
+        font-size: 30px;
+        padding: 20px 0;
+    }
 }

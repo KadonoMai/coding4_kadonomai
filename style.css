@@ -315,6 +315,8 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
+    /* スマホ版メニュー */
+
     .header_nav {
         display: none;
     }
@@ -387,11 +389,47 @@ img {
 
     .sp_nav li {
         color: #fff;
-        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
-            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+            "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+            "メイリオ", "Meiryo", "verdana", sans-serif;
         text-align: center;
         font-size: 30px;
         padding: 20px 0;
+    }
+
+    /* company_hope */
+
+    .title_p1 {
+        font-size: 0.833em;
+    }
+
+    .title_h {
+        font-size: 0.854px;
+    }
+
+    .title_p2 {
+        font-size: 0.87em;
+    }
+
+    /* about_us */
+
+    .pic_right h3 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* company_hope */
+
+    .title_p1 {
+        font-size: 17px;
+    }
+
+    .title_h {
+        font-size: 38px;
+    }
+
+    .title_p2 {
+        font-size: 16px;
     }
 }

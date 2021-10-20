@@ -400,15 +400,15 @@ img {
     /* company_hope */
 
     .title_p1 {
-        font-size: 0.833em;
+        font-size: 1.25em;
     }
 
     .title_h {
-        font-size: 0.854px;
+        font-size: 10vw;
     }
 
     .title_p2 {
-        font-size: 0.87em;
+        font-size: 1.188em;
     }
 
     /* about_us */
@@ -416,20 +416,52 @@ img {
     .pic_right h3 {
         font-size: 35px;
     }
+
+    .pic_right h2 img {
+        font-size: 0.765em;
+    }
 }
 
 @media screen and (max-width: 767px) {
     /* company_hope */
 
     .title_p1 {
-        font-size: 17px;
+        font-size: 1.063em;
     }
 
     .title_h {
-        font-size: 38px;
+        font-size: 8vw;
     }
 
     .title_p2 {
-        font-size: 16px;
+        font-size: 1em;
+    }
+
+    .about_us {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pic_right h2 img {
+        font-size: 47px;
+        margin-top: 30px;
+    }
+
+    .pic_left img {
+        border-radius: 0px;
+        max-width: 100vw;
+    }
+
+    .menu_picture {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer_list {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer_list img {
     }
 }

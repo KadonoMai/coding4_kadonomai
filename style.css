@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* リセット */
+html {
+    font-size: 62.5%;
+}
 html,
 body,
 header,
@@ -79,7 +82,7 @@ img {
 .header_nav li {
     width: 104px;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #fff;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
@@ -103,18 +106,18 @@ img {
 }
 
 .title_p1 {
-    font-size: 30px;
+    font-size: 3rem;
     padding: 103px 0px 0px 0px;
 }
 
 .title_h {
-    font-size: 82px;
+    font-size: 8.2rem;
     font-weight: normal;
     padding: 50px 0px 0px 0px;
 }
 
 .title_p2 {
-    font-size: 23px;
+    font-size: 2.3rem;
     padding: 50px 0px 0px 0px;
     margin-bottom: 88.5px;
     line-height: 1.65;
@@ -149,14 +152,14 @@ img {
 }
 
 .pic_right h3 {
-    font-size: 44px;
+    font-size: 4.4rem;
     font-weight: normal;
     line-height: 1.39;
     margin-bottom: 8.4%;
 }
 
 .pic_right p {
-    font-size: 16px;
+    font-size: 1.6px;
     line-height: 1.63;
     margin-bottom: 8.4%;
 }
@@ -191,13 +194,13 @@ img {
     text-align: start;
     padding-left: 10px;
     margin: -10px 0px 20px;
-    font-size: 38px;
+    font-size: 3.8rem;
     color: #d30202;
 }
 
 .menu_picture p {
     text-align: left;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #4f260b;
     line-height: 1.47;
 }
@@ -228,7 +231,7 @@ img {
     text-align: left;
     background-color: #fff;
     border: 3.68px solid #4f260b;
-    font-size: 23px;
+    font-size: 2.3rem;
     padding: 2% 0% 2% 15%;
     margin-bottom: 60px;
 }
@@ -239,7 +242,7 @@ img {
     margin: 0 auto;
 }
 
-.event_information span {
+.event_information .news_pc {
     margin-left: 55px;
     text-decoration: underline #4f260b;
 }
@@ -288,13 +291,13 @@ img {
     margin-left: 16%;
 }
 .footer li {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.95;
     text-align: left;
 }
 
 .footer p {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
     line-height: 2.19;
     margin: 80px 0px 20px;
@@ -380,6 +383,7 @@ img {
         background: rgba(000, 000, 000, 0.8);
         width: 100%;
     }
+
     .sp_nav ul {
         display: flex;
         flex-direction: column;
@@ -393,32 +397,32 @@ img {
             "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
             "メイリオ", "Meiryo", "verdana", sans-serif;
         text-align: center;
-        font-size: 30px;
+        font-size: 3rem;
         padding: 20px 0;
     }
 
     /* company_hope */
 
+    .company_hope {
+        margin: 0 auto;
+    }
+
     .title_p1 {
-        font-size: 1.25em;
+        font-size: 2 rem;
     }
 
     .title_h {
-        font-size: 10vw;
+        font-size: 4.3rem;
     }
 
     .title_p2 {
-        font-size: 1.188em;
+        font-size: 1.9rem;
     }
 
     /* about_us */
 
     .pic_right h3 {
-        font-size: 35px;
-    }
-
-    .pic_right h2 img {
-        font-size: 0.765em;
+        font-size: 3.6rem;
     }
 }
 
@@ -429,45 +433,131 @@ img {
         align-items: center;
     }
 
+    .company_hope {
+        max-width: 767px;
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+    .company_hope h2 {
+        width: 100%;
+    }
+
     .title_p1 {
-        font-size: 1.063em;
+        font-size: 1.7rem;
     }
 
     .title_h {
-        font-size: 8vw;
+        font-size: 3.8rem;
     }
 
     .title_p2 {
-        font-size: 1em;
+        font: size 1.6rem;
+    }
+
+    .mb {
+        display: block;
     }
 
     .about_us {
+        display: flex;
+        max-width: 100%;
+        margin: 0 auto;
         align-items: center;
         flex-direction: column;
     }
 
-    .pic_right h2 img {
-        font-size: 47px;
-        margin-top: 30px;
+    .pic_left {
+        margin-bottom: 30px;
+        margin: 0 calc(50% -50vw);
+        width: 100vw;
+        order: 2;
     }
 
     .pic_left img {
         border-radius: 0px;
-        max-width: 100vw;
+        width: 100%;
+    }
+
+    .pic_right {
+        width: 100%;
+    }
+
+    .pic_right h2 {
+        margin: 0 auto;
         align-items: center;
+        width: 50%;
+        order: 1;
+    }
+
+    .pic_h {
+        font-size: 3.6rem;
+        align-items: flex-start;
+        order: 3;
+    }
+
+    .pic_text {
+        font-size: 1.6rem;
+        order: 4;
+        margin-bottom: 40px;
+    }
+
+    /* menu */
+    .menu h2 img {
+        margin: 0px auto 20px;
+    }
+
+    .menu {
+        width: 100%;
     }
 
     .menu_picture {
         align-items: center;
         flex-direction: column;
+        width: 100vw;
     }
+
+    .menu_picture h3 {
+        font-size: 4rem;
+    }
+
+    .menu_picture p {
+        font-size: 1.6rem;
+        margin-bottom: 50px;
+    }
+
+    /* event */
+
+    .event_information ul {
+        font-size: 1.6rem;
+    }
+
+    .event_information ul .news_sp {
+        display: block;
+    }
+
+    /* footer */
 
     .footer_list {
-        align-items: center;
         flex-direction: column;
+        align-items: flex-start;
     }
 
-    .footer_list img {
-        width: 100vw;
+    .footer_list h2 img {
+        width: 230px;
+        margin: 0px 120px 20px 20px;
+    }
+
+    .footer_list ul {
+        margin-left: 5%;
+    }
+
+    .footer_list li {
+        font-size: 1.8rem;
+        line-height: 1.72;
+    }
+
+    .footer p {
+        margin: 40px auto 30px;
     }
 }

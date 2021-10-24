@@ -7,6 +7,7 @@
         <title>デザインカフェ</title>
         <link rel="stylesheet" href="style.css" />
         <meta name="discription" content="デザインカフェオープンしました。" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
@@ -28,6 +29,17 @@
                             <li><a href="#access">ACCESS</a></li>
                         </ul>
                     </nav>
+
+                    <nav class="sp_nav">
+                        <ul>
+                            <li><a href="#about_us">ABOUT US</a></li>
+                            <li><a href="#menu">MENU</a></li>
+                            <li><a href="#gallery">GALLERY</a></li>
+                            <li><a href="#event">EVENT</a></li>
+                            <li><a href="#access">ACCESS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sp_menu_btn"><span></span></div>
                 </div>
             </div>
 
@@ -35,10 +47,13 @@
 
             <div class="slider1">
                 <div>
-                    <img
-                        src="images/pc_first-100.jpg"
-                        alt="デザインカフェの様子"
-                    />
+                    <picture>
+                        <source srcset="" />
+                        <img
+                            src="images/pc_first-100.jpg"
+                            alt="デザインカフェの様子"
+                        />
+                    </picture>
                 </div>
             </div>
         </header>
@@ -58,8 +73,14 @@
                         </h2>
 
                         <p class="title_p2">
-                            毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br />
-                            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+                            毎日を丁寧に大切に過ごしたい。<br
+                                class="mb"
+                            />だからこそ一杯一杯丁寧にコーヒーを入れ<br /><br
+                                class="mb"
+                            />
+                            足を運んでくれるお客さんには落ち着く空間と<br
+                                class="mb"
+                            />こだわりのコーヒーを提供したい。
                         </p>
                     </div>
 
@@ -247,5 +268,14 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            $(function () {
+                $(".sp_menu_btn,.sp_nav li a").click(function () {
+                    $(".sp_menu_btn").toggleClass("open");
+                    $(".sp_nav").fadeToggle();
+                });
+            });
+        </script>
     </body>
 </html>

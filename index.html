@@ -238,6 +238,35 @@
                                 alt="GALLERYのテキスト"
                             />
                         </h2>
+
+                        <div class="gallery_photo">
+                            <picture>
+                                <img
+                                    src="images/pc_gallary_01-100.jpg"
+                                    alt="ラテの写真"
+                                />
+                                <img
+                                    src="images/pc_gallary_02-100.jpg"
+                                    alt="照明の写真"
+                                />
+                                <img
+                                    src="images/pc_gallary_03-100.jpg"
+                                    alt="カフェイメージ写真"
+                                />
+                                <img
+                                    src="images/pc_gallary_04-100.jpg"
+                                    alt="コーヒー豆の写真"
+                                />
+                                <img
+                                    src="images/pc_gallary_05-100.jpg"
+                                    alt="カフェイメージ写真"
+                                />
+                                <img
+                                    src="images/pc_gallary_01-100.jpg"
+                                    alt="ラテの写真"
+                                />
+                            </picture>
+                        </div>
                     </section>
 
                     <!-- EVENT -->
@@ -353,6 +382,14 @@
                     autoplaySpeed: 2000,
                     autopley: true,
                     dots: true,
+                })
+                $(".gallery_photo").slick({
+                    infinite: true,
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                    autopley: true,
+                    autoplaySpeed: 3000,
+                    infinite: true,
                 })
             })
         </script>

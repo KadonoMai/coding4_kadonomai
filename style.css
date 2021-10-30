@@ -227,6 +227,21 @@ img {
     margin: 0 auto 30px;
 }
 
+.event h2 img {
+    width: 100%;
+}
+
+.gallery_slide slick-initialized slick-slider {
+    display: flex;
+    overflow: hidden;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+}
+
+.slick-prev:before {
+    display: none;
+}
+
 /* event */
 
 .container {
@@ -584,6 +599,10 @@ img {
     .gallery h2 {
         width: 142px;
     }
+
+    .gallery_slide img {
+        width: 100%;
+    }
     /* event */
 
     .event {
@@ -593,10 +612,6 @@ img {
     .event h2 {
         width: 100px;
         margin: 0 auto 20px;
-    }
-
-    .event h2 img {
-        width: 100%;
     }
 
     .news_pc {

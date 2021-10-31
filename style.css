@@ -231,9 +231,7 @@ img {
     width: 100%;
 }
 
-.gallery_slide slick-initialized slick-slider {
-    display: flex;
-    overflow: hidden;
+.gallery_slide {
     margin: 0 calc(50% - 50vw);
     width: 100vw;
 }
